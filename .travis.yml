@@ -6,5 +6,4 @@ before_install:
   - docker build -t niketjsh/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run niketjsh/docker-react npm run test -- --coverage
-  
+  - docker run niketjsh/docker-react npm run test --forceExit
